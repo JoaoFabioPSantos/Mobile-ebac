@@ -7,12 +7,6 @@ public class LerpHelper : MonoBehaviour
     public Transform target;
     public float lerpSpeed = 1f;
 
-    
-    void Start()
-    {
-        
-    }
-
     void Update()
     {
         //Smoothing the control

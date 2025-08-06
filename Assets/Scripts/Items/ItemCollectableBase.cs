@@ -6,7 +6,7 @@ public class ItemCollectableBase : MonoBehaviour
 {
     public string compareTag = "Player";
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter(Collider collision)
     {
         if (collision.transform.CompareTag(compareTag))
         {
