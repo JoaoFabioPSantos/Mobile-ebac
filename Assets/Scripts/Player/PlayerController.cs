@@ -24,6 +24,7 @@ public class PlayerController : Singleton<PlayerController>
     [Header("Power Ups config")]
     public TextMeshPro uiTextPowerUp;
     public bool invencible = false;
+    public GameObject coinCollector;
 
     private bool _canRun;
     private Vector3 _position;
@@ -128,6 +129,11 @@ public class PlayerController : Singleton<PlayerController>
         transform.position = p;
 
         //trocar as linhas para : transform.DOMoveY(_startPosition.y, .1f);
+    }
+
+    public void ChangeCoinCollectorSize(float amount)
+    {
+        coinCollector.transform.localScale = Vector3.one * amount;
     }
     #endregion
 }
