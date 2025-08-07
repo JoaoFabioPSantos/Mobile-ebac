@@ -68,6 +68,11 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   compareTag: Player
+  particleSystem: {fileID: 0}
+  timeToHide: 3
+  graphicItem: {fileID: 4242960190958141328}
+  collider: {fileID: 4982483642338177842}
+  audioSource: {fileID: 0}
 --- !u!1 &7907952983105766577
 GameObject:
   m_ObjectHideFlags: 0
