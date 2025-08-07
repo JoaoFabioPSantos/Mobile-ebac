@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using Studio.Core.Singleton;
+using TMPro;
 
 public class PlayerController : Singleton<PlayerController>
 {
@@ -17,6 +18,10 @@ public class PlayerController : Singleton<PlayerController>
     [Header("Screens")]
     public GameObject endScreen;
     public GameObject winScreen;
+
+    [Header("Power Ups config")]
+    public TextMeshPro uiTextPowerUp;
+    public bool invencible = false;
 
     private bool _canRun;
     private Vector3 _position;
@@ -46,7 +51,7 @@ public class PlayerController : Singleton<PlayerController>
     {
         if (collision.transform.tag == tagToCheckEnemy)
         {
-            EndGame();
+           if(!invencible)EndGame();
         }
     }
 
@@ -55,7 +60,7 @@ public class PlayerController : Singleton<PlayerController>
         if(other.gameObject.tag == tagEndLine)
         {
             _isWin = true;
-            EndGame(_isWin);
+            if (!invencible)EndGame(_isWin);
         }
     }
 
@@ -82,7 +87,7 @@ public class PlayerController : Singleton<PlayerController>
     #region POWER UPS
     public void SetPowerUpText(string s)
     {
-        //uiTextPowerUp.text = s;
+        uiTextPowerUp.text = s;
     }
 
     public void PowerUpSpeedUp(float f)
@@ -93,6 +98,12 @@ public class PlayerController : Singleton<PlayerController>
     public void ResetSpeed()
     {
         _currentSpeed = speed;
+    }
+
+    //quando igualamos um valor assim, é um valor default
+    public void SetInvencible(bool b = true)
+    {
+        invencible = b;
     }
     #endregion
 }
