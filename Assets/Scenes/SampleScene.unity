@@ -1104,6 +1104,7 @@ Transform:
   - {fileID: 2007828003}
   - {fileID: 2066129286}
   - {fileID: 706540583}
+  - {fileID: 1442711233}
   m_Father: {fileID: 1212503135}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &561505232
@@ -2939,6 +2940,55 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406872809}
   m_CullTransparentMesh: 1
+--- !u!1 &1442711232
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1442711233}
+  - component: {fileID: 1442711234}
+  m_Layer: 0
+  m_Name: CoinsAnimationManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1442711233
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442711232}
+  serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -1.46, y: -2.71, z: -7.95}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 461742070}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1442711234
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1442711232}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e43656bc47efc1c4d9e54108ae76fe34, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itens:
+  - {fileID: 0}
+  scaleDuration: 0.2
+  scaleTimeBetweenPieces: 0.02
+  ease: 27
 --- !u!114 &1456857078 stripped
 MonoBehaviour:
   m_CorrespondingSourceObject: {fileID: 6135527061999333768, guid: 89e20167823a30d459856414377997d1, type: 3}
@@ -4149,7 +4199,10 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 205b7260e18267d4ea77bf1d8fdeeff0, type: 2}
   - {fileID: 11400000, guid: 2df7fcf5613a57c408910cf7d4177715, type: 2}
   - {fileID: 11400000, guid: 4880885a64169d4449995a207192a430, type: 2}
-  _index: 2
+  scaleDuration: 0.2
+  scaleTimeBetweenPieces: 0.1
+  ease: 27
+  _index: 1
 --- !u!1 &2013179663
 GameObject:
   m_ObjectHideFlags: 0

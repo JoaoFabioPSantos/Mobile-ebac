@@ -11,7 +11,7 @@ public class ItemCollectableCoin : ItemCollectableBase
 
     private void Start()
     {
-       // CoinsAnimatioManager.Instance.RegisterCoin(this);
+       //CoinsAnimationManager.Instance.RegisterCoin();
     }
 
     protected override void OnCollect()

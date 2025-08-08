@@ -14,8 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artType: 1
   levelPieces:
-  - {fileID: 1842671064098787029, guid: 03109feb5e42f7c429f994956d0f1d98, type: 3}
   - {fileID: 7938062494458327394, guid: 4b7a689764256b94e8a052eaa2137184, type: 3}
+  - {fileID: 1842671064098787029, guid: 03109feb5e42f7c429f994956d0f1d98, type: 3}
   - {fileID: 1842671064098787029, guid: dbaafd515ca14c84ba8acf7f1a796192, type: 3}
   levelPiecesStart:
   - {fileID: 7938062494458327394, guid: 3452e182b7efe314b9b5f405a1de7995, type: 3}
