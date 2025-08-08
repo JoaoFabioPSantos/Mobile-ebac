@@ -5,12 +5,7 @@ using UnityEngine;
 public class TouchController : MonoBehaviour
 {
     public Vector2 pastPosition;
-    public float velocity = 0.1f;
-
-    void Start()
-    {
-        
-    }
+    public float velocity = 0.6f;
     
     void Update()
     {

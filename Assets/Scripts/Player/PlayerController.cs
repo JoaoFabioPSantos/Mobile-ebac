@@ -3,8 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using Studio.Core.Singleton;
 using TMPro;
-
-//using DG.Tweening;
+using DG.Tweening;
 
 public class PlayerController : Singleton<PlayerController>
 {
@@ -109,26 +108,15 @@ public class PlayerController : Singleton<PlayerController>
         invencible = b;
     }
 
-    public void ChangeHeight(float amount, float duration, float animationDuration)
+    public void ChangeHeight(float amount, float duration, float animationDuration, Ease ease)
     {
-        var p = transform.position;
-        p.y = _startPosition.y + amount;
-        transform.position = p;
-
-        /*Isso aqui é após instalação do DG, trocar a parte aqui em cima;
-         *transform.DOMoveY(_startPosition.y + amount, animationDuration).SetEase(ease);//.OnComplete(ResetHeight);
+        transform.DOMoveY(_startPosition.y + amount, animationDuration).SetEase(ease);
         Invoke(nameof(ResetHeight), duration);
-         *
-         */
     }
     
     public void  ResetHeight()
     {
-        var p = transform.position;
-        p.y = _startPosition.y;
-        transform.position = p;
-
-        //trocar as linhas para : transform.DOMoveY(_startPosition.y, .1f);
+        transform.DOMoveY(_startPosition.y, .1f);
     }
 
     public void ChangeCoinCollectorSize(float amount)

@@ -1,18 +1,20 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using DG.Tweening;
 
 public class PowerUpHeight : PowerUpBase
 {
     [Header("Power Up Height")]
     public float amountHeight = 2f;
     public float animationDuration = 1f;
-   // public DG.Tweeaning Ease ease = DG.Tweening.Ease.Outback;
+    public DG.Tweening.Ease ease = DG.Tweening.Ease.OutBack;
 
     protected override void StartPowerUp()
     {
         base.StartPowerUp();
-        PlayerController.Instance.ChangeHeight(amountHeight, base.duration, animationDuration);
+        PlayerController.Instance.ChangeHeight(amountHeight, base.duration, animationDuration, ease);
+        PlayerController.Instance.SetPowerUpText("AirMode");
 
     }
 
@@ -20,5 +22,6 @@ public class PowerUpHeight : PowerUpBase
     {
         base.EndPowerUp();
         PlayerController.Instance.ResetHeight();
+        PlayerController.Instance.SetPowerUpText("");
     }
 }
