@@ -72,7 +72,7 @@ public class PlayerController : Singleton<PlayerController>
         if(other.gameObject.tag == tagEndLine)
         {
             _isWin = true;
-            if (!invencible)EndGame(_isWin);
+            if (!invencible)EndGame(_isWin, AnimatorManager.AnimationType.IDLE);
         }
     }
 
@@ -88,11 +88,12 @@ public class PlayerController : Singleton<PlayerController>
         animatorManager.Play(animationType);
     }
 
-    private void EndGame(bool isWin)
+    private void EndGame(bool isWin, AnimatorManager.AnimationType animationType = AnimatorManager.AnimationType.IDLE)
     {
         if (isWin)
         {
             _canRun = false;
+            animatorManager.Play(animationType);
             winScreen.SetActive(true);
         }
     }
