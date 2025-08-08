@@ -261,7 +261,7 @@ Transform:
   m_GameObject: {fileID: 140817001}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: 0, y: -1, z: 0}
+  m_LocalPosition: {x: 0, y: -0.55, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 25}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -971,6 +971,7 @@ MonoBehaviour:
   uiTextPowerUp: {fileID: 1373214518}
   invencible: 0
   coinCollector: {fileID: 1528463314}
+  animatorManager: {fileID: 1456857078}
 --- !u!1001 &392634907
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2000,7 +2001,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5156129202013452133, guid: 89e20167823a30d459856414377997d1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0
+      value: -0.49
       objectReference: {fileID: 0}
     - target: {fileID: 5156129202013452133, guid: 89e20167823a30d459856414377997d1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -2041,10 +2042,7 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents:
-    - targetCorrespondingSourceObject: {fileID: 5531986718136724959, guid: 89e20167823a30d459856414377997d1, type: 3}
-      insertIndex: -1
-      addedObject: {fileID: 1456857078}
+    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 89e20167823a30d459856414377997d1, type: 3}
 --- !u!4 &786558716 stripped
 Transform:
@@ -3230,36 +3228,17 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1406872809}
   m_CullTransparentMesh: 1
---- !u!1 &1456857076 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5531986718136724959, guid: 89e20167823a30d459856414377997d1, type: 3}
-  m_PrefabInstance: {fileID: 786558715}
-  m_PrefabAsset: {fileID: 0}
---- !u!95 &1456857077 stripped
-Animator:
-  m_CorrespondingSourceObject: {fileID: 7193805671317595757, guid: 89e20167823a30d459856414377997d1, type: 3}
-  m_PrefabInstance: {fileID: 786558715}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1456857078
+--- !u!114 &1456857078 stripped
 MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
+  m_CorrespondingSourceObject: {fileID: 6135527061999333768, guid: 89e20167823a30d459856414377997d1, type: 3}
+  m_PrefabInstance: {fileID: 786558715}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1456857076}
+  m_GameObject: {fileID: 0}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 750cdea50b2b5244886e9f65cdeb7381, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  animator: {fileID: 1456857077}
-  animatorSetups:
-  - type: 0
-    trigger: idle
-  - type: 1
-    trigger: run
-  - type: 2
-    trigger: dead
 --- !u!4 &1476732733 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3375105760291539947, guid: 0e9cabb03f9e59d4da76b45d1d43b587, type: 3}
