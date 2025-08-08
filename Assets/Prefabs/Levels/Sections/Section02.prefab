@@ -75,6 +75,7 @@ GameObject:
   - component: {fileID: 5553362539159739963}
   - component: {fileID: 2616228636928347601}
   - component: {fileID: 4219710691321061352}
+  - component: {fileID: 1039557390737726810}
   m_Layer: 0
   m_Name: Floor
   m_TagString: Untagged
@@ -169,6 +170,21 @@ MeshCollider:
   m_Convex: 0
   m_CookingOptions: 30
   m_Mesh: {fileID: 10209, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!114 &1039557390737726810
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2637764964757405345}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eb8126d409d7ef248ac7906e4d0bad69, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  duration: 1
+  meshRenderer: {fileID: 2616228636928347601}
+  startColor: {r: 1, g: 1, b: 1, a: 1}
 --- !u!1 &6183993982266446012
 GameObject:
   m_ObjectHideFlags: 0

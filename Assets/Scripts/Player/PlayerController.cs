@@ -28,7 +28,9 @@ public class PlayerController : Singleton<PlayerController>
 
     [Header("Animation")]
     public AnimatorManager animatorManager;
-
+    public float timeToAppear = 0.5f;
+    public Ease ease = Ease.Linear;
+    [SerializeField]private BounceHelper bounceHelper;
 
     private bool _canRun;
     private Vector3 _position;
@@ -40,7 +42,19 @@ public class PlayerController : Singleton<PlayerController>
     void Start()
     {
         _startPosition = transform.position;
+        StartingAnimation();
         ResetSpeed();
+    }
+
+    public void StartingAnimation()
+    {
+        transform.localScale = Vector3.zero;
+        transform.DOScale(1, timeToAppear).SetEase(ease);
+    }
+
+    public void Bounce()
+    {
+        if(bounceHelper!=null)bounceHelper.Bounce();
     }
 
     void Update()

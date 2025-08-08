@@ -44,5 +44,6 @@ public class ItemCollectableBase : MonoBehaviour
             particleSystem.Play();
         }
         if(audioSource != null) audioSource.Play();
+        PlayerController.Instance.Bounce();
     }
 }

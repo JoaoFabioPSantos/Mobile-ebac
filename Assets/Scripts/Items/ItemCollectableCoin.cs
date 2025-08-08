@@ -11,15 +11,20 @@ public class ItemCollectableCoin : ItemCollectableBase
 
     private void Start()
     {
-       //CoinsAnimationManager.Instance.RegisterCoin();
+        //CoinsAnimationManager.Instance.RegisterCoin(this);
     }
 
     protected override void OnCollect()
     {
         base.OnCollect();
         collect = true;
-       // PlayerController.Instance.Bounce();
-        ItemManager.Instance.AddCoins();
+        collider.enabled = false;
+        //ItemManager.Instance.AddCoins();
+    }
+
+    protected override void Collect()
+    {
+        OnCollect();
     }
 
     private void Update()
@@ -30,7 +35,7 @@ public class ItemCollectableCoin : ItemCollectableBase
 
             if(Vector3.Distance(transform.position, PlayerController.Instance.transform.position) < minDistance)
             {
-                //HideItems();
+                HideItems();
                 Destroy(gameObject);
             }
         }

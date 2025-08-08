@@ -32,7 +32,7 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
 
     private void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
+        if(Input.GetKeyDown(KeyCode.T))
         {
             StartAnimations();
         }
@@ -50,6 +50,7 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
             p.transform.localScale = Vector3.zero;
         }
         Sort();
+
         yield return null;
 
         for (int i = 0; i < itens.Count; i++)
@@ -61,6 +62,7 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
 
     private void Sort()
     {
-        itens = itens.OrderBy(x => Vector2.Distance(transform.position, x.transform.position)).ToList();
+        itens = itens.OrderBy(
+            x => Vector3.Distance(this.transform.position, x.transform.position)).ToList();
     }
 }

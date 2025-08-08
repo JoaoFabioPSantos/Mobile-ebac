@@ -95,7 +95,12 @@ public class LevelManager : MonoBehaviour
             var lastPiece = _spawnedPieces[_spawnedPieces.Count - 1];
             spawnedPiece.transform.position = lastPiece.endPiece.position;
         }
-        foreach(var p in spawnedPiece.GetComponentsInChildren<ArtPiece>())
+        else
+        {
+            spawnedPiece.transform.position = Vector3.zero;
+        }
+
+        foreach (var p in spawnedPiece.GetComponentsInChildren<ArtPiece>())
         {
             p.ChangePiece(ArtManager.Instance.GetSetupByType(_currentSetup.artType).gameObject);
         }
@@ -116,7 +121,7 @@ public class LevelManager : MonoBehaviour
             _spawnedPieces[i].transform.DOScale(1, scaleDuration).SetEase(ease);
             yield return new WaitForSeconds(scaleTimeBetweenPieces);
         }
-        CoinsAnimationManager.Instance.StartAnimations();
+        //CoinsAnimationManager.Instance.StartAnimations();
     }
 
     private void CleanSpawnedPieces()
