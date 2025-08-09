@@ -12,13 +12,14 @@ public class CoinsAnimationManager : Singleton<CoinsAnimationManager>
     public List<ItemCollectableCoin> itens;
 
     [Header("Animation")]
-    public float scaleDuration = .2f;
+    public float scaleDuration = .9f;
     public float scaleTimeBetweenPieces = .1f;
     public Ease ease = Ease.OutBack;
 
     private void Start()
     {
         itens = new List<ItemCollectableCoin>();
+        StartAnimations();
     }
 
     public void RegisterCoin(ItemCollectableCoin i)

@@ -2975,7 +2975,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1442711233
 Transform:
   m_ObjectHideFlags: 0
@@ -3005,7 +3005,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itens:
   - {fileID: 0}
-  scaleDuration: 0.2
+  scaleDuration: 0.9
   scaleTimeBetweenPieces: 0.02
   ease: 27
 --- !u!114 &1456857078 stripped
@@ -4221,7 +4221,7 @@ MonoBehaviour:
   scaleDuration: 0.2
   scaleTimeBetweenPieces: 0.1
   ease: 27
-  _index: 1
+  _index: 0
 --- !u!1 &2013179663
 GameObject:
   m_ObjectHideFlags: 0
@@ -4465,11 +4465,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   artSetups:
   - artType: 0
-    gameObject: {fileID: 429756254285558758, guid: 3e84c5e792ab58143a04e49f0357f80d, type: 3}
+    artGameObject: {fileID: 429756254285558758, guid: 3e84c5e792ab58143a04e49f0357f80d, type: 3}
   - artType: 1
-    gameObject: {fileID: 777698348815392482, guid: 701640e869e802745a6689faad8661d4, type: 3}
+    artGameObject: {fileID: 777698348815392482, guid: 701640e869e802745a6689faad8661d4, type: 3}
   - artType: 2
-    gameObject: {fileID: 6468010674753213537, guid: 0e68eb17886a57c4f8eb68a05d0d2600, type: 3}
+    artGameObject: {fileID: 6468010674753213537, guid: 0e68eb17886a57c4f8eb68a05d0d2600, type: 3}
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0

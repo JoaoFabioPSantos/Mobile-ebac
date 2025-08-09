@@ -156,4 +156,4 @@ MonoBehaviour:
   graphicItem: {fileID: 2594208837564519117}
   collider: {fileID: 305939808111766319}
   audioSource: {fileID: 0}
-  duration: 4
+  duration: 2

@@ -102,7 +102,7 @@ public class LevelManager : MonoBehaviour
 
         foreach (var p in spawnedPiece.GetComponentsInChildren<ArtPiece>())
         {
-            p.ChangePiece(ArtManager.Instance.GetSetupByType(_currentSetup.artType).gameObject);
+            p.ChangePiece(ArtManager.Instance.GetSetupByType(_currentSetup.artType).artGameObject);
         }
 
         _spawnedPieces.Add(spawnedPiece);

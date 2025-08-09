@@ -1,24 +1,23 @@
+using DG.Tweening;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class ItemCollectableCoin : ItemCollectableBase
 {
-    public Collider collider;
     public bool collect = false;
     public float lerp = 5f;
     public float minDistance = 1f;
 
     private void Start()
     {
-        //CoinsAnimationManager.Instance.RegisterCoin(this);
+        CoinsAnimationManager.Instance.RegisterCoin(this);
     }
 
     protected override void OnCollect()
     {
         base.OnCollect();
         collect = true;
-        collider.enabled = false;
         //ItemManager.Instance.AddCoins();
     }
 

@@ -255,7 +255,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &7919664378245969946
 Transform:
   m_ObjectHideFlags: 0
@@ -347,6 +347,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7919664378245969946}
     m_Modifications:
+    - target: {fileID: 1755304943607163725, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
+      propertyPath: currentArt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2607351825886961578, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
       propertyPath: m_Name
       value: ArtType01
@@ -533,6 +537,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7919664378245969946}
     m_Modifications:
+    - target: {fileID: 1755304943607163725, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
+      propertyPath: currentArt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2607351825886961578, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
       propertyPath: m_Name
       value: ArtType01 (3)
@@ -577,6 +585,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8927814464455709332, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
+      propertyPath: currentArtLocal
+      value: 
+      objectReference: {fileID: 5112890260898148691}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -595,6 +607,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7919664378245969946}
     m_Modifications:
+    - target: {fileID: 1755304943607163725, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
+      propertyPath: currentArt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2607351825886961578, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
       propertyPath: m_Name
       value: ArtType01 (2)
@@ -781,6 +797,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7919664378245969946}
     m_Modifications:
+    - target: {fileID: 1755304943607163725, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
+      propertyPath: currentArt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2607351825886961578, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
       propertyPath: m_Name
       value: ArtType01 (1)
@@ -905,6 +925,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7919664378245969946}
     m_Modifications:
+    - target: {fileID: 1755304943607163725, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
+      propertyPath: currentArt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2607351825886961578, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
       propertyPath: m_Name
       value: ArtType01 (5)
@@ -967,6 +991,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 7919664378245969946}
     m_Modifications:
+    - target: {fileID: 1755304943607163725, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
+      propertyPath: currentArt
+      value: 
+      objectReference: {fileID: 0}
     - target: {fileID: 2607351825886961578, guid: 0a7c389826c644d4fbb5abf33f247699, type: 3}
       propertyPath: m_Name
       value: ArtType01 (4)
