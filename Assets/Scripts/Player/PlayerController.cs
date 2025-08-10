@@ -7,7 +7,9 @@ using DG.Tweening;
 
 public class PlayerController : Singleton<PlayerController>
 {
+    [Header("Movement")]
     public float speed = 3f;
+    public Vector2 limitVector = new Vector2(-6,6);
 
     [Header("Tags")]
     public string tagToCheckEnemy = "Enemy";
@@ -31,6 +33,8 @@ public class PlayerController : Singleton<PlayerController>
     public float timeToAppear = 0.5f;
     public Ease ease = Ease.Linear;
     [SerializeField]private BounceHelper bounceHelper;
+    public ParticleSystem vfxDeath;
+    public ParticleSystem vfxWinGame;
 
     private bool _canRun;
     private Vector3 _position;
@@ -65,6 +69,9 @@ public class PlayerController : Singleton<PlayerController>
         _position.y = transform.position.y;
         _position.z = transform.position.z;
 
+        if(_position.x < limitVector.x) _position.x = limitVector.x;
+        if (_position.x > limitVector.y) _position.x = limitVector.y;
+
         transform.position = Vector3.Lerp(transform.position, _position, lerpSpeed * Time.deltaTime);
         transform.Translate(transform.forward * _currentSpeed * Time.deltaTime);
     }
@@ -77,6 +84,7 @@ public class PlayerController : Singleton<PlayerController>
             {
                 MoveBack(transform);
                 EndGame(AnimatorManager.AnimationType.DEAD);
+                if(vfxDeath!=null)vfxDeath.Play();
             }
         }
     }
@@ -109,6 +117,7 @@ public class PlayerController : Singleton<PlayerController>
             _canRun = false;
             animatorManager.Play(animationType);
             winScreen.SetActive(true);
+            if (vfxWinGame != null) vfxWinGame.Play();
         }
     }
 

@@ -329,6 +329,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1403699391389069575}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -457,6 +473,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1403699391389069575}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -717,6 +749,26 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: prewarm
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1403699391389069575}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -779,6 +831,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1403699391389069575}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -907,6 +975,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1403699391389069575}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -1101,6 +1185,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: looping
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: lengthInSec
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: InitialModule.startLifetime.scalar
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 6081793233871673868, guid: 4548fdd0c9b1e744382459b7b61a8e16, type: 3}
+      propertyPath: CollisionModule.m_Planes.Array.data[0]
+      value: 
+      objectReference: {fileID: 1403699391389069575}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

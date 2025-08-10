@@ -6,7 +6,7 @@ using UnityEngine;
 public class ItemCollectableCoin : ItemCollectableBase
 {
     public bool collect = false;
-    public float lerp = 5f;
+    public float lerp = .5f;
     public float minDistance = 1f;
 
     private void Start()
